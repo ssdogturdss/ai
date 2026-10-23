@@ -1,0 +1,7 @@
+ollama
+httpx
+pydantic
+rich
+fastapi
+uvicorn[standard]
+jinja2

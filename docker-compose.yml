@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      # Set this on the host/CI runner; secrets are never committed to GitHub.
+      - DATABASE_URL=${DATABASE_URL:?Set DATABASE_URL before starting the container}
